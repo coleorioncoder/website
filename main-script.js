@@ -211,8 +211,10 @@ function drawFunc3(e) {
     webglInst2.display(1, "tlp", true);
 }
 
-drawFunc3();
+
 canvas1.addEventListener("mousemove", drawFunc3);
 //secondCanvas.addEventListener("touchmove", drawFunc2);
 canvas1.addEventListener("wheel", drawFunc3);
-setInterval(drawFunc3, 20);
+window.setInterval(drawFunc3, 20);
+
+
