@@ -1,3 +1,4 @@
+document.body.innerHTML += "<p>utils loaded</p>";
 var Mat4 = glMatrix.mat4;
 var M4 = {
     identity: [
