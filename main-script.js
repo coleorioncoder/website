@@ -1,4 +1,4 @@
-document.body.innerHTML += "<p>js loaded "+WebGLStuffObj !== null ? "as well as webglTools library" : ""+"</p>";
+document.body.innerHTML += "<p>js loaded "+(WebGLStuffObj.initShaderProgram !== null ? "as well as webglTools library" : "")+"</p>";
 var Mat4 = glMatrix.mat4;
 var M4 = {
     identity: [
