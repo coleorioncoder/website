@@ -1,4 +1,4 @@
-document.body.textContent += "js loaded";
+document.body.innerHTML += "<p>js loaded</p>";
 var Mat4 = glMatrix.mat4;
 var M4 = {
     identity: [
