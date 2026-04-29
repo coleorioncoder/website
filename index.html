@@ -5,6 +5,11 @@
     <title>Code Weavings</title>
     <link rel="icon" type="image/png" href="icon.png">
     <link href="main-style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>My Webpage</h1>
+    <canvas id="main-canvas"></canvas>
+
     <script src="https://cdn.jsdelivr.net/gh/coleorioncoder/webglTools@1.0.1/webGlFrameworkObj.js"></script>
     <script type="x-shader/x-vertex" id="vertex-vsh">
       //#version 100 //es
@@ -88,10 +93,6 @@ vColor.z, vColor.w);//*/
       }
     </script>
     <script src="utils.js"></script>
-  </head>
-  <body>
-    <h1>My Webpage</h1>
-    <canvas id="main-canvas"></canvas>
     <script src="main-script.js"></script>
     <!--<script>
       var Mat4 = glMatrix.mat4;
