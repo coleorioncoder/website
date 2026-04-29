@@ -6,6 +6,87 @@
     <link rel="icon" type="image/png" href="icon.png">
     <link href="main-style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/coleorioncoder/webglTools@1.0.1/webGlFrameworkObj.js"></script>
+    <script type="x-shader/x-vertex" id="vertex-vsh">
+      //#version 100 //es
+      //precision mediump float;
+      #ifdef GL_FRAGMENT_PRECISION_HIGH
+          precision highp float;
+      #else
+          precision mediump float;
+      #endif
+      
+      attribute vec4 a_vPos;
+      attribute vec4 a_vColor;
+      attribute float a_vSize;
+      
+      uniform mat4 u_projectionMatrix;
+      uniform mat4 u_modelViewMatrix;
+      //uniform mat4 u_identityMatrix;
+      
+      varying lowp vec4 vColor;
+      varying lowp float vSize;
+      void main() {
+          vec4 finalPosition = u_projectionMatrix * u_modelViewMatrix * a_vPos;
+          gl_Position = finalPosition;
+          gl_PointSize = a_vSize;
+          vSize = a_vSize;
+          vColor = a_vColor;
+      }
+    </script>
+    <script type="x-shader/x-fragment" id="fragment-fsh">
+      //#version 100// es
+      //#ifdef GL_ES
+      //precision mediump float;
+      //#endif
+      #ifdef GL_FRAGMENT_PRECISION_HIGH
+      precision highp float;
+      #else
+      precision mediump float;
+      #endif
+      
+      varying lowp vec4 vColor;
+      varying lowp float vSize;
+      
+      void main() {
+          //gl_FragColor = vColor; 
+          //*
+          vec2 fragmentPosition = 1.0*gl_PointCoord - 0.5;
+          float distance = length(fragmentPosition) * vSize;
+          float distanceSq = distance * distance / distance;
+          gl_FragColor = vec4(
+vColor.x/distanceSq,
+vColor.y/distanceSq,
+vColor.z/distanceSq, vColor.w/distanceSq);//*/
+          // something due to size / radius modification
+      }
+    </script>
+    <script type="x-shader/x-fragment" id="fragment1-fsh">
+      //#version 100// es
+      //#ifdef GL_ES
+      //precision mediump float;
+      //#endif
+      #ifdef GL_FRAGMENT_PRECISION_HIGH
+      precision highp float;
+      #else
+      precision mediump float;
+      #endif
+      
+      varying lowp vec4 vColor;
+      varying lowp float vSize;
+      
+      void main() {
+          gl_FragColor = vColor; 
+          /*
+          vec2 fragmentPosition = 1.0*gl_PointCoord - 0.5;
+          float distance = length(fragmentPosition) * vSize;
+          float distanceSq = distance * distance / distance;
+          gl_FragColor = vec4(
+vColor.x/distanceSq,
+vColor.y/distanceSq,
+vColor.z, vColor.w);//*/
+          // something due to size / radius modification
+      }
+    </script>
     <script src="utils.js"></script>
     <script src="main-script.js"></script>
   </head>
