@@ -1,4 +1,4 @@
-document.body.innerHTML += "<p>js loaded "+(WebGLStuffObj.initShaderProgram !== null ? "as well as webglTools library" : " ")+"</p>";
+//document.body.innerHTML += "<p>js loaded "+(WebGLStuffObj.initShaderProgram !== null ? "as well as webglTools library" : " ")+"</p>";
 
 var canvas1 = document.getElementById("main-canvas");
 
