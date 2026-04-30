@@ -231,6 +231,8 @@ function drawFunc3(e) {
     
     
     webglInst2.display(1, "tlp", true);
+
+    document.getElementById("pixelData").innerHTML = weglInst2.getCurrentPixelBytes();
 }
 
 
