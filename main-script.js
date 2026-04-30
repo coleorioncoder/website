@@ -212,7 +212,7 @@ function drawFunc3(e) {
     
     webglInst2.display(1, "tlp", true);
 
-    document.getElementById("pixel-data").innerHTML = webglInst2.getCurrentPixelBytes().toHex().toString().replaceAll("", " ");
+    //document.getElementById("pixel-data").innerHTML = webglInst2.getCurrentPixelBytes().toHex().toString().replaceAll("", " ");
 }
 
 
