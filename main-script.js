@@ -1,4 +1,4 @@
-//document.body.innerHTML += "<p>js loaded "+(WebGLStuffObj.initShaderProgram !== null ? "as well as webglTools library" : " ")+"</p>";
+document.body.innerHTML += "<p>js loaded "+(WebGLStuffObj.getCurrentPixelBytes !== null ? "as well as webglTools library" : " ")+"</p>";
 
 var canvas1 = document.getElementById("main-canvas");
 
@@ -212,7 +212,7 @@ function drawFunc3(e) {
     
     webglInst2.display(1, "tlp", true);
 
-    document.getElementById("pixel-data").textContent = weglInst2.getCurrentPixelBytes();
+    document.getElementById("pixel-data").innerHTML = weglInst2.getCurrentPixelBytes().toString();
 }
 
 
