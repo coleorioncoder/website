@@ -7,7 +7,7 @@ var DOMfss = document.getElementById("fragment-fsh").textContent;
 var DOMfss1 = document.getElementById("fragment1-fsh").textContent;
 
 var vsSource = DOMvss;
-var fsSource = DOMfss1;
+var fsSource = DOMfss;
 
 
 var vertexSize = 1.41;
