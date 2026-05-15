@@ -6,7 +6,8 @@
     <link rel="icon" type="image/png" href="icon.png">
     <link href="style.css" rel="stylesheet">
     <link href="main-style.css" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/gl-matrix@3.0.0/gl-matrix-min.js'></script>
+    <script src="https://cdn.jsdelivr.net/gh/coleorioncoder/webglTools@main/webGlFrameworkObj.js"></script>
   </head>
   <body>
     <img src="icon.png" class="menu-btn">
@@ -16,13 +17,12 @@
         <li><a href="games.html">Games</a></li>
       </ul>
     </nav>
-    
+
     <h1>My Webpage</h1>
     <canvas id="main-canvas"></canvas>
     <p id="pixel-data"></p>
 
-    <script src='https://cdn.jsdelivr.net/npm/gl-matrix@3.0.0/gl-matrix-min.js'></script>
-    <script src="https://cdn.jsdelivr.net/gh/coleorioncoder/webglTools@main/webGlFrameworkObj.js"></script>
+    <script src="script.js"></script>
     <script type="x-shader/x-vertex" id="vertex-vsh">
       //#version 100 //es
       //precision mediump float;
