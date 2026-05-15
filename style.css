@@ -21,6 +21,8 @@
 .main-nav li {
     text-align: center;
     margin: 2px;
+    margin-left: 0px;
+    padding-left: 0px;
     list-style-type: none;
 }
 .main-nav li:hover {
