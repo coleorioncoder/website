@@ -1,5 +1,5 @@
 var menus = document.getElementsByClassName("main-nav");
-var menuBtns = document.getElementsByClassName("nav-btn");
+var menuBtns = document.getElementsByClassName("menu-btn");
 
 for (let i = 0; i < menuBtns.length; i++) {
     let menuBtn = menuBtns[i];
