@@ -6,10 +6,13 @@ for (let i = 0; i < menuBtns.length; i++) {
     menuBtn.addEventListener("click", function (e) {
         for (let j = 0; j < menus.length; j++) {
             let menu = menus[j];
+            document.body.innerHTML+="<span class=\"debug-text\">clicked</span>"
             if (menu.style.display == "none") {
                 menu.style.display = "block";
+                document.body.innerHTML+="<span class=\"debug-text\">displaying</span>"
             } else {
                 menu.style.display = "none";
+                document.body.innerHTML+="<span class=\"debug-text\">hiding</span>"
             }
         }
     });

@@ -16,3 +16,6 @@
     padding: 2%;
     background-color: rgba(0, 0, 0, 50);
 }
+.debug-text {
+    font-family:monospace;
+}
