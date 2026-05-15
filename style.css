@@ -21,10 +21,17 @@
 .main-nav li {
     text-align: center;
     margin: 2px;
-    text-decoration: none;
+    list-style-type: none;
 }
 .main-nav li:hover {
     background-color: rgba(10, 10, 10, 0.4);
+    
+}
+.main-nav li a {
+    text-decoration: none;
+}
+.main-nav li a:hover {
+    text-decoration: none;
 }
 .debug-text {
     font-family:monospace;
