@@ -14,7 +14,7 @@
     top: 30px;
     margin: 10px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 25);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
 }
 .main-nav li {
@@ -23,7 +23,7 @@
     text-decoration: none;
 }
 .main-nav li:hover {
-    background-color: rgba(10, 10, 10, 25);
+    background-color: rgba(10, 10, 10, 0.2);
 }
 .debug-text {
     font-family:monospace;
