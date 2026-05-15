@@ -1,6 +1,8 @@
 var menus = document.getElementsByClassName("main-nav");
 var menuBtns = document.getElementsByClassName("menu-btn");
 
+
+
 for (let i = 0; i < menuBtns.length; i++) {
     let menuBtn = menuBtns[i];
     menuBtn.addEventListener("click", function (e) {
@@ -8,7 +10,7 @@ for (let i = 0; i < menuBtns.length; i++) {
             let menu = menus[j];
             document.body.innerHTML+="<span class=\"debug-text\">clicked</span>"
             document.body.innerHTML+="<span class=\"debug-text\">"+menu.style.display+"</span>";
-            if (menu.style.display == "none") {
+            if (getComputedStyle(menu).display == "none") {
                 menu.style.display = "block";
                 document.body.innerHTML+="<span class=\"debug-text\">displaying</span>"
             } else {
