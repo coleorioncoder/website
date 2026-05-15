@@ -16,6 +16,7 @@
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
+    list-style-type: none;
 }
 .main-nav li {
     text-align: center;
