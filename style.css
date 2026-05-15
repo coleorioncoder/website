@@ -2,7 +2,7 @@
     position:absolute;
     left:5px;
     top:5px;
-    size:10px;
+    width:5%;
 }
 .menu-btn:hover {
     cursor:pointer;
