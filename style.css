@@ -1,0 +1,18 @@
+.menu-btn {
+    position:absolute;
+    left:5px;
+    top:5px;
+    size:5%;
+}
+.menu-btn:hover {
+    cursor:pointer;
+}
+.main-nav {
+    display:none;
+    position: fixed;
+    left: 2%;
+    top: 2%;
+    margin: 2%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 50);
+}
