@@ -7,6 +7,7 @@ for (let i = 0; i < menuBtns.length; i++) {
         for (let j = 0; j < menus.length; j++) {
             let menu = menus[j];
             document.body.innerHTML+="<span class=\"debug-text\">clicked</span>"
+            document.body.innerHTML+="<span class=\"debug-text\">"+menu.style.display+"</span>";
             if (menu.style.display == "none") {
                 menu.style.display = "block";
                 document.body.innerHTML+="<span class=\"debug-text\">displaying</span>"
